@@ -1,0 +1,51 @@
+/* screen - authentication-success */
+
+.authentication-success {
+  background-color: var(--mulled-wine);
+  height: 100vh;
+  margin: 0px;
+  min-height: 291px;
+  min-width: 451px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.authentication-success .animate-enter2 {
+  animation: animate-enter2-frames 5.00s ease 0.00s 1 normal forwards;
+  display: block;
+opacity: 0;transform: scale(1.1);
+}
+.authentication-success .backend-aio-K3GyuQ {
+  background-color: transparent;
+  height: 48px;
+  left: calc(42.49% - 101px);
+  object-fit: cover;
+  position: absolute;
+  top: calc(24.69% - 12px);
+  width: 238px;
+}
+.authentication-success .welcome-back-K3GyuQ {
+  -webkit-text-stroke: 1px #4fb777;
+  background-color: transparent;
+  bottom: calc(49.44% - 11px);
+  color: var(--white);
+  display: block;
+  font-family: var(--font-family-helveticaneue-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: 22px;
+  letter-spacing: 0.00px;
+  line-height: 17px;
+  position: absolute;
+  right: calc(48.50% - 57px);
+  text-align: left;
+  width: 117px;
+opacity: 0;transform: scale(1.1);
+}
+@keyframes animate-enter2-frames {
+
+from{opacity: 0;transform: scale(1.1);}
+to{opacity: 1;transform: scale(1);}
+}

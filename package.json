@@ -1,0 +1,35 @@
+{
+  "name": "backend-aio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/code-frame": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/generator": "^7.14.5",
+    "@babel/parser": "^7.14.6",
+    "@babel/runtime": "^7.14.6",
+    "@babel/template": "^7.14.5",
+    "@babel/traverse": "^7.14.5",
+    "@babel/types": "^7.14.5",
+    "@infosimples/node_two_captcha": "^1.1.0",
+    "acron": "^1.0.5",
+    "ast-types": "^0.14.2",
+    "async": "^3.2.0",
+    "cheerio": "^1.0.0-rc.10",
+    "discord-webhook-node": "^1.1.8",
+    "electron": "^12.0.9",
+    "escodegen": "^2.0.0",
+    "esprima": "^4.0.1",
+    "node-adyen-encrypt": "^2.3.1",
+    "node-html-parser": "^3.3.5",
+    "performance-now": "^2.1.0",
+    "util": "^0.12.4",
+    "uuid": "^8.3.2"
+  }
+}

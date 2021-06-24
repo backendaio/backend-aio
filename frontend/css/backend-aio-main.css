@@ -1,0 +1,10 @@
+/* screen - backend-aio-main */
+
+.backend-aio-main {
+  background-color: var(--mulled-wine);
+  height: 700px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1000px;
+}

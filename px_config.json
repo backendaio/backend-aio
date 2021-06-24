@@ -1,0 +1,14 @@
+{
+	"snipes" : {
+		"url" : "https://www.snipesusa.com/",
+		"appId" : "PX6XNN2xkk",
+		"tag" : "v6.5.5",
+		"ftag" : "202"
+	},
+	"walmart" : {
+		"url" : "https://www.walmart.com/",
+		"appId" : "PXu6b0qd2S",
+		"tag" : "v6.5.5",
+		"ftag" : "202"
+	}
+}
