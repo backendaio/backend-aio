@@ -1,6 +1,6 @@
 function e(e) {
 
-    for (var i = su(e), a = "X32oAsP", s = "", c = 0; c < i.length; ++c) {
+    for (var i = su(e), a = "cSBLObF", s = "", c = 0; c < i.length; ++c) {
         var u = a.charCodeAt(c % 7);
         s += String.fromCharCode(u ^ i.charCodeAt(c))
     }

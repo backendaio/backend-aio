@@ -1,12 +1,12 @@
-var device = require('./device.json');
+//var device = require('./device.json');
 //const { gen_mact } = require('./mact.js');
-const { performance } = require('perf_hooks');
-const unescapeJs = require('unescape-js');
-const { promisify } = require('util');
-const sleep = promisify(setTimeout);
-const { gen_mact_v2 } = require('./mact_v2.js');
-const all_user_agent = require('./user-agent.json');
-const fs = require('fs');
+//const { performance } = require('perf_hooks');
+//const unescapeJs = require('unescape-js');
+//const { promisify } = require('util');
+//const sleep = promisify(setTimeout);
+//const { gen_mact_v2 } = require('./mact_v2.js');
+//const all_user_agent = require('./user-agent.json');
+//const fs = require('fs');
 const random_user_agent = all_user_agent[random(0, all_user_agent.length - 1)];
 
 function random_device(){

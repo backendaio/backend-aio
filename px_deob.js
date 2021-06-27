@@ -3,7 +3,7 @@ const escodegen = require('escodegen');
 const fs = require('fs');
 const { deob_string } = require('./px_deob_string.js');
 
-var source = fs.readFileSync('./px_source.js', 'utf8');
+var source = fs.readFileSync('./ssense_px_source.js', 'utf8');
 
 function Literal(node){
 
@@ -17,7 +17,7 @@ function deob(){
 		try{
 
 			if(Literal(node)){
-				if(node['value'].startsWith('CG')){
+				if(node['value'].startsWith('Mw')){
 					node['value'] = deob_string(node['value']);
 				};
 			};
@@ -26,7 +26,7 @@ function deob(){
 		source = escodegen.generate(node);
 	});
 
-	fs.writeFileSync('./px_deobfuscated.js', source, 'utf8');
+	fs.writeFileSync('./ssense_px_deobfuscated.js', source, 'utf8');
 
 };
 

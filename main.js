@@ -48,13 +48,17 @@ async function gen_cookie(done = false){
 			//setImmediate(gen_px_walmart, proxies_array[i + 800]);
 			//console.log(await gen_px_walmart(proxies_array[i]));
 			//setImmediate(task.execute());
-			var status = await gen_px_walmart(proxies_array[random(0, 10000)]); 
+			var status = await gen_px_walmart(false); 
 
 			if(status){
 
 				cookie_count++;
 				console.table({ cookie : cookie_count });
 				done = true;
+
+			} else {
+
+				process.exit(1);
 
 			};
 
@@ -71,9 +75,9 @@ async function gen_cookie(done = false){
 
 async function main(){
 
-	for(z = 0; z < 10; z++){
+	for(z = 0; z < 1; z++){
 
-		gen_cookie();
+		await gen_cookie();
 
 	};
 
@@ -119,6 +123,8 @@ try{
 
 		//};	
 
+		await gen_px_walmart(false);
+		//main();
 		//gen_px_snipes();
 		//setImmediate(gen_px_walmart, 'x1.x.h3x.me:5681:Bns4PtHe6abzdQlbz5QF:OH39XjnEjcDUHocU3k4ORpyozcToZdZ5yX2ndCdGVWVktv20rffnzqpGM-s34y0n3EYG');
 		//setImmediate(gen_px_walmart, 'x1.x.h3x.me:5681:Bns4PtHe6abzdQlbz5QF:OH39XjnEjcDUHocU3k4ORpyozcToZdZ5yX2ndCdGVWVktv20rffnzqpGM-s34y0n3EYG');
@@ -130,7 +136,7 @@ try{
 
 		//};
 
-		setInterval(main,2000);
+		//setInterval(main,2000);
 
 	});
 

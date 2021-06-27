@@ -40,6 +40,10 @@ async function gen_px_walmart(proxy){
 		return false; 
 
 	};
+
+	await task.get_session().cookies.set({ name : '_px3', value : '|cce012b53543868a7ca60f80e7322c904e1e65a9f3128350822eaf16c2985a4c:vlmCvgedcckgegywHVuvHi6giJh9u9eUJ3FAlHVm/xhrgthuVdOcOD7eitYhXX3ieeqPSeJTljsLTx/l3j7ywg==:1000:42AQvXXeLSeMTZLwD0HHzKT9vnxe18kEqqwq+w0pAAvo9yhVovAUEmQgggKUAhb++4OYnxTaAsoiqUXBzc7VVZwNw9L2p8ZiaoASmd+5wx6j2C4Mn+4P+zhxW2Zri7nertfIb+V9McQyDyJOSwidB9ySFtH74BtCi02oi308oyYDVzgxVdh16AMi5ujrzCAOMmcm/7/c852030z1JEb86Q==', url : 'https://www.walmart.com/', domain : '.walmart.com', sameSite: 'lax', session : false});
+
+	//console.log(get);
 	//console.log(get['data']);
 	//var px2_payload = await gen_px2(sid);
 	var px_client = new px('walmart'); 
@@ -75,7 +79,7 @@ async function gen_px_walmart(proxy){
 	//var px2_data = JSON.parse(post['data']);
 	//px2_data = px2_data['do'];
 	//px2_data = px2_data.find(b => b.startsWith('cls'));
-	//console.log(JSON.parse(post['data']));
+	console.log(JSON.parse(post['data']));
 	await px_client.set_cls(post['data']);
 	await px_client.set_drc(post['data']);
 	await px_client.set_wcs(post['data']);
@@ -116,7 +120,7 @@ async function gen_px_walmart(proxy){
 		
 	};
 
-	//console.log(JSON.parse(post['data']));
+	console.log(JSON.parse(post['data']));
 	var px3_cookies_data = JSON.parse(post['data'])['do'][0].split('|');
 	//var pxvid_cookies_data = JSON.parse(post['data'])['do'][1].split('|');
 	var pxde_cookies_data = JSON.parse(post['data'])['do'][1].split('|');
@@ -163,7 +167,7 @@ async function gen_px_walmart(proxy){
 		
 			};
 
-			//console.log(JSON.parse(post['data']));
+			console.log(JSON.parse(post['data']));
 
 			//var px3_cookies_data = JSON.parse(post['data'])['do'][0].split('|');
 			//var pxvid_cookies_data = JSON.parse(post['data'])['do'][1].split('|');
@@ -178,18 +182,18 @@ async function gen_px_walmart(proxy){
 
 			if(JSON.parse(post['data'])['do'][0].startsWith('en|_pxde|330|')){
 
-				return true;
+				//return true;
 
 			} else {
 
-				return false;
+				//return false;
 			};
 
 		};
 
 	} catch {
 
-		return false;
+		//return false;
 
 	};
 
@@ -238,7 +242,7 @@ async function gen_px_walmart(proxy){
 	//await task.get_session().cookies.set({ name : '_pxde', value : custom_px3_cookie, url : 'https://www.walmart.com/', domain : '.walmart.com', sameSite: 'lax', session : false});
 
 
-	var login = false; 
+	var login = true; 
 
 	if(login){
 
@@ -262,6 +266,8 @@ async function gen_px_walmart(proxy){
 			body :  "{\"username\":\"bach7225@gmail.com\",\"password\":\"Bach3012\",\"rememberme\":true,\"showRememberme\":\"true\",\"captcha\":{\"sensorData\":\"\"}}",
 
 		});
+
+		//console.log(post['data']);
 
 		try{
 

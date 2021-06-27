@@ -643,6 +643,26 @@ async function gen_px3(pxhd_value) {
         var PX55 = 'https%3A%2F%2Fwww.walmart.com%2F';
 
     };
+    //null !== document.elementFromPoint(0, 0);
+    var PX184 = true;
+    var PX1061 = '';
+
+    if(site == 'walmart'){
+
+        PX1061 = [
+        {
+          tagName: 'INPUT',
+          id: '',
+          type: 'search',
+          name: 'q',
+          height: 40,
+          width: 56,
+          x: 420.5,
+          y: 24
+        }
+      ];
+
+    };
     //var PX55 = 'https%3A%2F%2Fwww.walmart.com%2Fblocked%3Furl%3DLw%3D%3D%26uuid%3D107d1640-d24d-11eb-ad91-d50adee0d56b%26vid%3D%26g%3Da';
     var PX1065 = 2;
     //var PX850 = 1;
@@ -776,6 +796,8 @@ async function gen_px3(pxhd_value) {
     px3_payload[0]['d']['PX141'] = PX141;
     px3_payload[0]['d']['PX96'] = PX96;
     px3_payload[0]['d']['PX55'] = PX55;
+    px3_payload[0]['d']['PX184'] = PX184;
+    px3_payload[0]['d']['PX1061'] = PX1061;
     px3_payload[0]['d']['PX1065'] = PX1065;
     px3_payload[0]['d']['PX850'] = PX850;
     PX850++;
