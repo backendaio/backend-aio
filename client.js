@@ -213,12 +213,12 @@ class client {
 
 				reject({
 
-			            options : options,
-			            redirect : redirect,
-						data : response_data,
-						headers : response_headers, 
-						status_code : status_code,
-						error : true 
+			        options : options,
+			        redirect : redirect,
+					data : response_data,
+					headers : response_headers, 
+					status_code : status_code,
+					error : true 
 
 				});
 
