@@ -696,7 +696,7 @@ class walmart{
 				},
 
 				credentials: 'include',
-				body: "{\"address\":{\"addressLineOne\":\"384 Riverway\",\"addressLineTwo\":\"Apt 4\",\"city\":\"Boston\",\"postalCode\":\"02115\",\"stateOrProvinceCode\":\"MA\",\"countryCode\":\"USA\"},\"options\":{\"maxResultSize\":\"10\"},\"geoHint\":\"US\"}",
+				body: "{\"address\":{\"addressLineOne\":\"\",\"addressLineTwo\":\"Apt 4\",\"city\":\"Boston\",\"postalCode\":\"02115\",\"stateOrProvinceCode\":\"MA\",\"countryCode\":\"USA\"},\"options\":{\"maxResultSize\":\"10\"},\"geoHint\":\"US\"}",
 
 			});
 
